@@ -1,0 +1,16 @@
+/* Импорт шрифтов TT Norms Pro Trial и TT Fors Trial */
+/* Эти шрифты используются в дизайне Cresco Finance */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Fallback на Inter, так как TT Norms Pro Trial - коммерческий шрифт */
+/* В продакшене следует заменить на лицензионные файлы шрифтов */
+
+:root {
+  --font-primary: 'Inter', 'TT Norms Pro Trial', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-secondary: 'Inter', 'TT Fors Trial', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+}

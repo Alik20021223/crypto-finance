@@ -1,0 +1,205 @@
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+
+/* Контейнер главной секции */
+.main-top-1{
+  width: 100%;
+  height: 525px;
+  background-image: url(../foto/fon.png);
+  background-position: 100% 105%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  margin: 0;
+  padding: 0;
+}
+
+.main-top-1-mini {
+  display: none;
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 30px;
+}
+
+.main {
+  width: 100%;
+}
+
+.main-top-1-content {
+  display: flex;
+  flex-direction: column;
+  padding: 57px 0 120px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.main-bottom-1 {
+  width: 100%;
+  padding: 50px 30px 80px 30px;
+  box-sizing: border-box;
+  background: var(--color-secondary-bg);
+}
+
+.main-top-1-content:last-child {
+  margin-top: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.est {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--color-gold);
+}
+
+.grid h2 {
+  max-width: 100%;
+}
+
+.mini img {
+  margin-right: 50px;
+}
+
+.main-top-1-button {
+  margin-top: 70px;
+}
+
+.main .space {
+  margin-bottom: 70px;
+}
+
+/* Кнопка консультации */
+.gold-button button {
+  width: 350px;
+  height: 60px;
+  background: linear-gradient(92.91deg, #C9B797 0%, #C29D5D 22.22%, #A3885A 76.92%, #C29D5D 97.12%);
+  /* padding: 32.5px 19px; */
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid var(--color-gold);
+}
+
+.main-bottom-1-content h2 {
+  font-size: 52px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .main-top-1 {
+    height: auto;
+    background-position: 100% 115%;
+  }
+
+  .container{
+    max-width: 100%;
+    padding-inline: 20px;
+  }
+
+  .space{
+    margin-bottom: 0px;
+  }
+
+  .est {
+    font-size: 16px;
+  }
+
+  .gold-button button {
+    width: 279px;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .main-bottom-1-content h2 {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .main .space {
+    margin-bottom: 40px;
+  }
+
+  .main-top-1-content .gold-button {
+    width: 100%;
+  }
+
+  .main-top-1-content h1 {
+    font-size: 40px;
+    line-height: 103%;
+    margin-bottom: 10px;
+  }
+
+  .main-top-1-mini {
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 23%;
+    left: 43%;
+
+  }
+
+  .main-top-1-mini img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-top-1 {
+    position: relative;
+    background-image: url(../foto/bg-main.png);
+    background-position: 50% 0;
+  }
+
+  .main-top-1-content {
+    padding: 205px 0 55px 0;
+  }
+
+  .main-bottom-1-content h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  .main-bottom-1 {
+    padding: 35px 15px;
+  }
+
+  .container {
+    padding-inline: 16px;
+  }
+
+  .est {
+    font-size: 15px;
+  }
+
+  .main-top-1-button {
+    margin-top: 50px;
+  }
+
+  .gold-button button {
+    width: 100%;
+    height: 36px;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .mini img {
+    display: none;
+  }
+}
+
+

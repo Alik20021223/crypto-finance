@@ -5,216 +5,511 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./main.css">
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/results.css">
+  <link rel="stylesheet" href="./css/cookie.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/events.css">
+  <link rel="stylesheet" href="./css/strategy.css">
+  <link rel="stylesheet" href="./css/service-links.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <title>CRESCO FINANCE</title>
 </head>
 
 <body>
-  <header>
-    <div class="top center">
-      <div class="info space">
-        <div class="tel">
-          <a href="tel:+78005114877" class="w">8 (800) 511-48-77</a>
-        </div>
-        <div class="message">
-          <a href="#" class="w center">
-            <img src="./foto/message.png" alt="message" style="margin-right: 7px;">
-            crescofinance
-          </a>
-        </div>
-        <div class="account">
-          <a href="#" class="w center">
-            Вход
-            <img src="./foto/account.png" alt="account" style="margin-left: 11px;">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="bottom center">
-      <div class="info space">
-        <div class="logo">
-          <a href="#"><img src="./foto/logo.png" alt="logo"></a>
-        </div>
-        <div class="menu space">
-          <div class="osnova space">
-            <div class="dropdown center">
-              <div class="rastoyanie space">
-                <a class="dropdown-a w">О НАС</a>
-              </div>
-              <div class="dropdown-content center">
-                <div class="left">
-                  <a href="#" class="w">Наша история</a>
-                  <a href="#" class="w">Команда</a>
-                  <a href="#" class="w">Новости</a>
-                </div>
-                <div class="right">
-                  <a href="#" class="w">Документы клиентом</a>
-                  <a href="#" class="w">Раскрытия информации</a>
-                  <a href="#" class="w">Вакансии</a>
-                </div>
-              </div>
-            </div>
-            <div class="dropdown center">
-              <div class="rastoyanie space">
-                <a class="dropdown-a w">УСЛУГИ</a>
-              </div>
-              <div class="dropdown-content center">
-                <div class="left">
-                  <a href="#" class="w">Инвестиционное консультирование</a>
-                  <a href="#" class="w">Брокерское обслуживание</a>
-                  <a href="#" class="w">Доверительное управление</a>
-                </div>
-              </div>
-            </div>
-            <div class="rastoyanie space">
-              <a href="#" class="w">ПАРТНЕРАМ</a>
-            </div>
-          </div>
-          <div class="svazy">
-            <a href="#" class="w">СВЯЗАТЬСЯ С НАМИ</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  <!-- Header загружается из отдельного файла: components/header.html -->
+  <header ></header>
 
-  <div class="container grid">
-    <div class="est info">
-      <p>est. 2009</p>
-    </div>
-    <div class="info space">
-      <div class="grid">
-        <h1 class="w">Ваши деньги работают:</h1>
-        <h2 class="w">индивидуальные стратегии под ваши цели и риски</h2>
-      </div>
-      <div class="center mini">
+  <main class="main">
+    <div class="container main-top-1">
+      <div class="center main-top-1-mini">
         <img src="./foto/mini-logo.png" alt="">
       </div>
-    </div>
-    <div class="button">
-      <button>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
-    </div>
-  </div>
-
-  <section class="cf-results" aria-label="Блок результата и информации">
-    <div class="cf-results__wrap">
-      <div class="cf-results__grid">
-        <!-- LEFT -->
-        <aside class="cf-results__left">
-          <div class="cf-person">
-            <div class="cf-person__avatar" aria-hidden="true">
-              <img src="./foto/account.png" alt="" />
-            </div>
-            <div class="cf-person__meta">
-              <div class="cf-person__name">Михаил Алепушкин</div>
-              <div class="cf-person__role">Генеральный директор</div>
-            </div>
+      <div class="main-top-1-content">
+        <div class="est">
+          <p>est. 2009</p>
+        </div>
+        <div class="space">
+          <div class="">
+            <h1 class="w">Ваши деньги работают:</h1>
+            <h2 class="w">индивидуальные стратегии <br> под ваши цели и риски</h2>
           </div>
-
-          <div class="cf-team">
-            <div class="cf-team__row" aria-label="Команда">
-              <div class="cf-team__avatar"><img src="./foto/account.png" alt="" /></div>
-              <div class="cf-team__avatar"><img src="./foto/account.png" alt="" /></div>
-              <div class="cf-team__avatar"><img src="./foto/account.png" alt="" /></div>
-              <div class="cf-team__avatar"><img src="./foto/account.png" alt="" /></div>
-              <div class="cf-team__avatar"><img src="./foto/account.png" alt="" /></div>
-            </div>
-            <div class="cf-team__caption">Команда с опытом более 20 лет</div>
+          <div class="center mini">
+            <img src="./foto/mini-logo.png" alt="">
           </div>
+        </div>
 
-          <div class="cf-doc" aria-label="Лицензии (превью)">
-            <div class="cf-doc__paper" aria-hidden="true"></div>
-          </div>
-
-          <div class="cf-person cf-person--compact">
-            <div class="cf-person__avatar" aria-hidden="true">
-              <img src="./foto/account.png" alt="" />
-            </div>
-            <div class="cf-person__meta">
-              <div class="cf-person__name">Степан Сумин</div>
-              <div class="cf-person__role">
-                Инвестиционный советник<br />
-                с 15-летним опытом
-              </div>
-            </div>
-          </div>
-        </aside>
-
-        <!-- RIGHT -->
-        <div class="cf-results__right">
-          <nav class="cf-breadcrumbs" aria-label="Навигационная цепочка">
-            <a class="cf-breadcrumbs__item" href="#">Облигационная стратегия</a>
-            <span class="cf-breadcrumbs__sep" aria-hidden="true">→</span>
-            <a class="cf-breadcrumbs__item" href="#">Доверительное управление</a>
-          </nav>
-
-          <header class="cf-hero">
-            <div class="cf-hero__title">Результат с начала 2025 года</div>
-            <div class="cf-hero__value">+22,56%</div>
-            <a class="cf-btn cf-btn--ghost" href="#">СТРАТЕГИИ</a>
-          </header>
-
-          <div class="cf-divider" role="separator" aria-hidden="true"></div>
-
-          <blockquote class="cf-quote">
-            «Успешная стратегия — это<br />
-            не алгоритм, а диалог с клиентом»
-          </blockquote>
-
-          <div class="cf-divider" role="separator" aria-hidden="true"></div>
-
-          <section class="cf-section">
-            <h3 class="cf-section__title">О компании</h3>
-            <p class="cf-section__text">
-              Cresco Finance — с 2009 года сохраняем и приумножаем ваш капитал
-            </p>
-            <a class="cf-btn cf-btn--muted" href="#">НАША ИСТОРИЯ</a>
-          </section>
-
-          <div class="cf-divider" role="separator" aria-hidden="true"></div>
-
-          <section class="cf-section">
-            <h3 class="cf-section__title">Лицензии</h3>
-            <p class="cf-section__text">
-              Мы имеем все необходимые лицензии профессионального участника фондового рынка, выданные Банком России.
-            </p>
-            <a class="cf-btn cf-btn--muted" href="#">СМОТРЕТЬ ВСЕ</a>
-          </section>
-
-          <div class="cf-divider" role="separator" aria-hidden="true"></div>
-
-          <section class="cf-section">
-            <h3 class="cf-section__title">Инвестиционные идеи</h3>
-            <div class="cf-ideas">
-              <div class="cf-ideas__head">
-                <div class="cf-ideas__col">Идея</div>
-                <div class="cf-ideas__col cf-ideas__col--right">Доходность</div>
-              </div>
-              <div class="cf-ideas__row">
-                <div class="cf-ideas__name">КЦ X5 (ИКС 5)</div>
-                <div class="cf-ideas__val">+15,3%</div>
-              </div>
-              <div class="cf-ideas__row">
-                <div class="cf-ideas__name">Облигации ЕвроТранс 7</div>
-                <div class="cf-ideas__val">+10%</div>
-              </div>
-            </div>
-            <a class="cf-btn cf-btn--outline-gold" href="#">СМОТРЕТЬ ВСЕ</a>
-          </section>
+        <div class="gold-button">
+          <button>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
         </div>
       </div>
+      
     </div>
-  </section>
 
-  <div class="cookie-banner" id="cookieBanner">
-    <p>Мы используем файлы «Cookie» для сбора и анализа информации о производительности и использовании сайта, а также
-      для улучшения и индивидуальной настройки предоставления информации. Нажимая кнопку «Принять» или продолжая
-      пользоваться данным сайтом, вы соглашаетесь на размещение файлов «Cookie» в соответствии с Политикой обработки
-      персональных данных</p>
-    <button id="acceptCookies">Принять</button>
-  </div>
+    <section class="container service-section-link">
+      <div class="service-links">
+        <div class="service-links__divider"></div>
+        
+        <div class="service-links__row">
+          <a href="#" class="service-link">Доверительное управление</a>
+          <div class="service-links__divider"></div>
+          <a href="#" class="service-link">Брокерское обслуживание</a>
+        </div>
+        
+        <div class="service-links__divider"></div>
+        
+        <div class="service-links__row">
+          <a href="#" class="service-link service-link--active">Инвестиционный советник</a>
+          <div class="service-links__divider"></div>
+          <a href="#" class="service-link">Инвестиционные идеи</a>
+        </div>
+        
+        <div class="service-links__divider"></div>
+      </div>
+    </section>
 
-  <script async src="./javascript.js"></script>
+    <section class="container-results">
+      <div class="cf-results__wrap">
+        <!-- Breadcrumbs и Hero секция -->
+        <div class="cf-hero-section space" style="margin-bottom: 34px;">
+          <div class="cf-hero__content">
+            <nav class="cf-breadcrumbs text-caption">
+             <div class="cf-breadcrumbs-content">
+              <span class="cf-breadcrumbs__item">Облигационная <br> стратегия</span>
+              <img src="./foto/ArrowRight.png" alt="arrow">
+             </div>
+             <div class="cf-breadcrumbs-content">
+              <span class="cf-breadcrumbs__item">Доверительное <br> управление</span>
+              <img src="./foto/ArrowRight.png" alt="arrow">
+             </div>
+            </nav>
+            <div class="cf-hero-section-content">
+              <h1 class="cf-hero__title w">Результат с начала 2025 года</h1>
+              <div class="cf-hero__value">
+                <p>+22,56</p> <span>%</span>
+              </div>
+              <div class="cf-hero-section-visual">
+                <span>Облигационная стратегия / <br/></span>
+                <span>Доверительное управление</span>
+              </div>
+              <div class="gold-button">
+                <a href="#" class="cf-btn cf-btn--ghost">СТРАТЕГИИ</a>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+
+        <!-- Сетка с рядами (визуал слева, текст справа) -->
+        <div class="cf-results__grid">
+          <!-- Ряд 1: Профиль директора + Цитата -->
+          <div class="cf-results__row">
+            <div class="cf-results__visual">
+              <div class="cf-person">
+                <div class="cf-person__avatar">
+                  <img src="./foto/1.jpg" alt="Михаил Аленушкин">
+                </div>
+                <div>
+                  <div class="text-caption-medium cf-person__name">Михаил Аленушкин</div>
+                  <div class="text-caption cf-person__role">Генеральный директор</div>
+                </div>
+              </div>
+            </div>
+            <div class="cf-results__content">
+              <div class="cf-quote text-quote w">
+                «Успешная стратегия — это не алгоритм, а диалог с клиентом»
+              </div>
+            </div>
+          </div>
+
+          <div class="cf-divider"></div>
+
+          <!-- Ряд 2: Команда + О компании -->
+          <div class="cf-results__row">
+            <div class="cf-results__visual">
+              <div class="cf-team">
+                <div class="cf-team__row">
+                  <div class="cf-team__avatar">
+                    <img src="./foto/2.jpg" alt="Участник команды">
+                  </div>
+                  <div class="cf-team__avatar">
+                    <img src="./foto/3.jpg" alt="Участник команды">
+                  </div>
+                  <div class="cf-team__avatar">
+                    <img src="./foto/4.jpg" alt="Участник команды">
+                  </div>
+                  <div class="cf-team__avatar">
+                    <img src="./foto/5.jpg" alt="Участник команды">
+                  </div>
+                  <div class="cf-team__avatar">
+                    <img src="./foto/6.jpg" alt="Участник команды">
+                  </div>
+                </div>
+                <div class="cf-team__caption text-caption">Команда с опытом более 20 лет</div>
+              </div>
+            </div>
+            <div class="cf-results__content">
+              <div class="cf-section">
+                <h2 class="cf-section__title text-section-title w">О компании</h2>
+                <p class="cf-section__text text-section-body w">
+                  Cresco Finance — с 2009 года сохраняем и приумножаем ваш капитал
+                </p>
+                <div class="cf-results__visual-mobile">
+                  <div class="cf-team">
+                    <div class="cf-team__row">
+                      <div class="cf-team__avatar">
+                        <img src="./foto/2.jpg" alt="Участник команды">
+                      </div>
+                      <div class="cf-team__avatar">
+                        <img src="./foto/3.jpg" alt="Участник команды">
+                      </div>
+                      <div class="cf-team__avatar">
+                        <img src="./foto/4.jpg" alt="Участник команды">
+                      </div>
+                      <div class="cf-team__avatar">
+                        <img src="./foto/5.jpg" alt="Участник команды">
+                      </div>
+                      <div class="cf-team__avatar">
+                        <img src="./foto/6.jpg" alt="Участник команды">
+                      </div>
+                    </div>
+                    <div class="cf-team__caption text-caption">Команда с опытом более 20 лет</div>
+                  </div>
+                </div>
+                <a href="#" class="cf-btn cf-btn--muted">НАША ИСТОРИЯ</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cf-divider"></div>
+
+          <!-- Ряд 3: Лицензия + Лицензии секция -->
+          <div class="cf-results__row">
+            <div class="cf-results__visual">
+              <div class="cf-doc">
+                <div class="cf-doc__paper"></div>
+              </div>
+            </div>
+            <div class="cf-results__content">
+              <div class="cf-section">
+                <h2 class="cf-section__title text-section-title w">Лицензии</h2>
+                <p class="cf-section__text text-section-body w">
+                  Мы имеем все необходимые лицензии профессионального участника фондового рынка, выданные Банком России.
+                </p>
+                <a href="#" class="cf-btn cf-btn--muted">СМОТРЕТЬ ВСЕ</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cf-divider"></div>
+
+          <!-- Ряд 4: Инвестиционный советник + Инвестиционные идеи -->
+          <div class="cf-results__row">
+            <div class="cf-results__visual">
+              <div class="cf-person cf-person--compact">
+                <div class="cf-person__avatar">
+                  <img src="./foto/7.jpg" alt="Степан Сумин">
+                </div>
+                <div>
+                  <div class="cf-person__name text-caption-medium">Степан Сумин</div>
+                  <div class="cf-person__role text-caption">Инвестиционный советник <br> с 15-летним опытом</div>
+                </div>
+              </div>
+            </div>
+            <div class="cf-results__content">
+              <div class="cf-section">
+                <h2 class="cf-section__title text-section-title w">Инвестиционные идеи</h2>
+                <div class="cf-ideas">
+                  <div class="cf-ideas__head">
+                    <div>Название</div>
+                    <div class="cf-ideas__col--right">Доходность</div>
+                  </div>
+                  <div class="cf-ideas__row">
+                    <div>Идея КЦ Х5 (ИКС 5)</div>
+                    <div class="cf-ideas__val">+15,3%</div>
+                  </div>
+                  <div class="cf-ideas__row">
+                    <div>Облигации ЕвроТранс 7</div>
+                    <div class="cf-ideas__val">+10%</div>
+                  </div>
+                </div>
+                <a href="#" class="cf-btn cf-btn--muted" style="margin-top: 18px;">СМОТРЕТЬ ВСЕ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция стратегии инвестирования -->
+    <section class="container strategy-section">
+      <div class="strategy-section-content">
+        <h2 class="strategy-title w">Подберем индивидуальную стратегию инвестирования с учетом ваших желаний и целей</h2>
+        
+        <div class="strategy-content">
+          <!-- Графический элемент слева -->
+          <div class="strategy-visual">
+            <img src="./foto/Ellipse.png" alt="strategy-visual">
+          </div>
+
+          <!-- Список услуг справа -->
+          <div class="strategy-services">
+            <div class="service-item">
+              <div class="service-header">
+                <h3 class="service-title">ИНВЕСТИЦИОННЫЙ СОВЕТНИК</h3>
+                <button class="service-toggle" aria-label="Развернуть">
+                  <span class="service-icon">+</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-header">
+                <h3 class="service-title">БРОКЕРСКОЕ ОБСЛУЖИВАНИЕ</h3>
+                <button class="service-toggle" aria-label="Развернуть">
+                  <span class="service-icon">+</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="service-item service-item--active">
+              <div class="service-header">
+                <h3 class="service-title">ДОВЕРИТЕЛЬНОЕ УПРАВЛЕНИЕ</h3>
+                <button class="service-toggle" aria-label="Свернуть">
+                  <span class="service-icon">—</span>
+                </button>
+              </div>
+              <div class="service-content">
+                <p class="service-description text-section-body-alt">Стратегии, адаптированные под ваш риск-профиль. Управление активами с фокусом на сохранность капитала и контролируемую доходность.</p>
+                <div class="gold-button">
+                  <button>УЗНАТЬ ПОДРОБНЕЕ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Секция с записями эфиров и событиями -->
+    <section class="events-section">
+      <div class="container">
+        <div class="events-layout">
+          
+          <!-- Основной контент -->
+            <div class="events-block-container">
+              <div class="events-block">
+                <div class="events-block-content">
+                  <h2 class="events-title w">Записи эфиров</h2>
+                  <p class="events-text w">Наши эксперты регулярно выступают на деловых телеканалах. Смотрите свежие комментарии по инвестиционным рынкам.</p>
+                  <a href="#" class="btn-outline-gold">СМОТРЕТЬ ВСЕ</a>
+                </div>
+              </div>
+    
+              <!-- Участвуйте в наших событиях -->
+              <div class="events-block">
+                <div class="events-block-content">
+                  <h2 class="events-title w">Участвуйте в наших событиях</h2>
+                  <p class="events-subtitle w">мероприятия, вебинары и конференции</p>
+                  <a href="#" class="btn-outline-gold">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Галерея изображений -->
+        <!-- Swiper галерея -->
+        <div>
+          <div class="swiper gallery-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/1.jpg" alt="Галерея 1">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/2.jpg" alt="Галерея 2">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/3.jpg" alt="Галерея 3">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/4.jpg" alt="Галерея 4">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/5.jpg" alt="Галерея 5">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/6.jpg" alt="Галерея 6">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/7.jpg" alt="Галерея 7">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/8.jpg" alt="Галерея 8">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper gallery-swiper gallery-swiper-reverse"> 
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/1.jpg" alt="Галерея 1">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/2.jpg" alt="Галерея 2">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/3.jpg" alt="Галерея 3">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/4.jpg" alt="Галерея 4">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/5.jpg" alt="Галерея 5">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/6.jpg" alt="Галерея 6">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/7.jpg" alt="Галерея 7">
+              </div>
+              <div class="swiper-slide gallery-item">
+                <img src="./foto/8.jpg" alt="Галерея 8">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <a href="#" class="events-section-contact-link">
+            <img src="./foto/message.png" alt="message">
+            <span>crescofinance</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container main-bottom-1">
+      <div class="main-bottom-1-content">
+        <h2 class="w">Свяжемся с вами, чтобы обсудить <br> инвестиционные возможности</h2>
+      </div>
+      <div class="gold-button">
+        <button>Свяжитесь со мной</button>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
+  <div id="cookieBannerContainer"></div>
+
+  <!-- Footer загружается из отдельного файла: components/footer.html -->
+  <div id="footerContainer"></div>
+
+  <!-- Загрузка header из отдельного файла -->
+  <script src="./js/header-loader.js"></script>
+  <!-- Загрузка cookie banner из отдельного файла -->
+  <script src="./js/cookie-banner-loader.js"></script>
+  <!-- Загрузка footer из отдельного файла -->
+  <script src="./js/footer-loader.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Основной JavaScript -->
+  <script src="./javascript.js"></script>
+  <!-- Аккордеон услуг -->
+  <script src="./js/strategy-accordion.js"></script>
+  <!-- Инициализация Swiper -->
+  <script>
+    // Первый ряд - прокрутка влево (по умолчанию)
+    const gallerySwiper1 = new Swiper('.gallery-swiper:not(.gallery-swiper-reverse)', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      speed: 800,
+      pagination: {
+        el: '.gallery-swiper:not(.gallery-swiper-reverse) .swiper-pagination',
+        clickable: true,
+        enabled: false, // По умолчанию выключена
+      },
+      breakpoints: {
+        // Мобильные устройства (до 768px)
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          pagination: {
+            enabled: true,
+          },
+          autoplay: {
+            delay: 3000,
+          },
+        },
+        // Планшеты и больше
+        768: {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          pagination: {
+            enabled: false,
+          },
+          autoplay: {
+            delay: 1000,
+          },
+        },
+      },
+    });
+
+    // Второй ряд - прокрутка вправо (reverse)
+    const gallerySwiper2 = new Swiper('.gallery-swiper-reverse', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+        reverseDirection: true,
+      },
+      loop: true,
+      speed: 1200,
+      pagination: {
+        el: '.gallery-swiper-reverse .swiper-pagination',
+        clickable: true,
+        enabled: false, // По умолчанию выключена
+      },
+      breakpoints: {
+        // Мобильные устройства (до 768px)
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          pagination: {
+            enabled: true,
+          },
+          autoplay: {
+            delay: 3500,
+            reverseDirection: true,
+          },
+        },
+        // Планшеты и больше
+        768: {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          pagination: {
+            enabled: false,
+          },
+          autoplay: {
+            delay: 1500,
+            reverseDirection: true,
+          },
+        },
+      },
+    });
+  </script>
 
 </body>
 
